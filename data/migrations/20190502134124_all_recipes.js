@@ -59,7 +59,7 @@ exports.up = function(knex, Promise) {
         .integer("ingredients_id")
         .unsigned()
         .notNullable()
-        .references("ingredients_id")
+        .references("ingredient_id")
         .inTable("ingredients")
         .onDelete("RESTRICT")
         .onUpdate("CASCADE");
